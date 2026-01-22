@@ -57,11 +57,11 @@ indicators.forEach((indicator, index) => {
 // Défilement automatique du carrousel
 let autoSlideInterval = setInterval(nextSlide, 5000);
 
-// Pause au survol
-const carouselContainer = document.querySelector('.carousel-container');
-carouselContainer.addEventListener('mouseenter', () => {
-    clearInterval(autoSlideInterval);
-});
+// // Pause au survol
+// const carouselContainer = document.querySelector('.carousel-container');
+// carouselContainer.addEventListener('mouseenter', () => {
+//     clearInterval(autoSlideInterval);
+// });
 
 carouselContainer.addEventListener('mouseleave', () => {
     autoSlideInterval = setInterval(nextSlide, 5000);
